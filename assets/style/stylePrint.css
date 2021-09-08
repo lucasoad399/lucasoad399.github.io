@@ -1,0 +1,28 @@
+body{}
+.text-center{
+    text-align:center;
+}
+.min-width-90{
+    min-width: 90px;
+}
+
+.pd-1{
+    padding: 1em;
+}
+.h-4{
+    height: 4em;
+}
+table{
+    width: 90%;
+    margin: 2em auto;
+}
+table, td{
+    border:1px solid black;
+    border-collapse: collapse;
+}
+table img{
+    width: 5em;
+}
+td{
+    padding: .3em;
+}

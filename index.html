@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style/normalize.css">
+    <link rel="stylesheet" href="assets/style/style.css">
+    <title>Intimação</title>
+</head>
+<body>
+    <header class="top-page">
+       
+        <img src="assets/img/logo-brasao-pcba-removebg-preview.png" alt="Brasão Polícia Civil Bahia">
+        
+        <div class="top-page-right">
+            <h1>Intimação PC-BA</h1>
+            <h2>DEAM</h2>
+        </div>
+    </header>
+    <section class="main-section">
+        <h2>Informe os dados da intimação</h2>
+        <form class="main-section-form" action="#">
+
+            <label for="BO">BO</label>
+            <input type="text" name="BO" id="BO" >
+
+            <label for="nome">Nome do Cliente</label>
+            <input type="text" name="nome" id="nome" >
+
+            <label for="endereco">Endereço</label>
+            <input type="text" name="endereco" id="endereco">
+
+            <div class="main-section-form-div-dateTime">
+                <label for="dia">Dia</label>
+                <input type="date" name="dia" id="dia"  >
+                <label for="hora">Hora</label>
+                <input type="time" name="hora" id="hora"  min="08:00" max="17:30" >
+            </div>
+
+            <button>Gerar</button>
+        </form>
+
+        <footer class="main-footer">
+            "POLICIA CIVIL 200 ANOS A SERVIO DA SOCIEDADE"
+        </footer>
+    </section>
+    
+    <script src="assets/js/index.js"></script>
+</body>
+</html>
