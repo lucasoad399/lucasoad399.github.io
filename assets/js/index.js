@@ -3,10 +3,17 @@
 const form = document.querySelector('.main-section-form');
 console.log(form);
 let imputValues =[];
+let listImput =[];
 let imprimir;
 form.addEventListener('submit', e=>{
     e.preventDefault();
-    const listImput = 
+    // Zerando todos os arrays
+    sessionStorage.clear('');
+    sessionStorage.removeItem('JsonIntima');
+    listImput = [];
+    imputValues = [];
+    
+    listImput = 
         document.querySelectorAll('.main-section-form input');
     console.log(listImput);
     listImput.forEach(el=>{
@@ -19,6 +26,7 @@ form.addEventListener('submit', e=>{
 });
 
 function jogaNoStorage(imputValues){
+    sessionStorage.clear('');
     sessionStorage.setItem('JsonIntima',  JSON.stringify(imputValues));
 }
 
