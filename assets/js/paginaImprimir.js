@@ -22,3 +22,7 @@ preencheCampo(spansNome, dadosPreencher[1]);
 preencheCampo(spansEnd, dadosPreencher[2]);
 preencheCampo(spansDate, formataData(dadosPreencher[3]));
 preencheCampo(spansTime, dadosPreencher[4]);
+
+spansDate.forEach(el=>{
+    if(el.innerHTML =="Invalid Date") el.innerHTML = "";
+});
