@@ -6,7 +6,11 @@ function preencheCampo(arr, valorpreencher = ""){
 
 function formataData(strData){
     let data = new Date(strData);
-    return data.toLocaleDateString();
+    dataCorreta = data.getUTCDate() + '/' + data.getUTCMonth() + '/'+ data.getUTCFullYear();
+    console.log(strData);
+    console.log(dataCorreta);
+    // console.log(data.toLocaleDateString());
+    return dataCorreta;
 
 }
 document.querySelector('#now').innerHTML = new Date().toLocaleDateString();
